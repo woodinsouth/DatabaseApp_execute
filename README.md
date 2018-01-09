@@ -1,7 +1,7 @@
 # DatabaseApp_execute
 Execute layer for junior year for database design experiment in whu univ 2018 autumn
 
-##Project Aim
+## Project Aim
  ### 1.Realize six sql sentences
    #### create sourceclass:
    
@@ -67,7 +67,7 @@ Execute layer for junior year for database design experiment in whu univ 2018 au
    
    ![query.png](/img/query_flowchart.png "query")
    
-##Execute Layer Design
+## Execute Layer Design
    Mainly in /interface
    ### 1.type
    Based on enum.java
