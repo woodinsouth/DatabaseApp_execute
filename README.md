@@ -39,29 +39,14 @@ Execute layer for junior year for database design experiment in whu univ 2018 au
    
    ![create_sourceclass.png](/img/create_sourceclass.png "create_class")
    
-        boolean isSourceClass(String classname);
-        boolean existClass(String classname);
-        boolean existAttri(String classname, String attribute);    
-        ERRNUM createClass(String classname, int attributenum);    
-        ERRNUM createAttri(String classname, String attribute, DATATYPE type);    
-        boolean OuputError(ERRNUM err);
-   
    #### create deputyclass
    
    ![create_deputyclass.png](/img/create_deputyclass.png "create_class")
-   
-       boolean isDeputyClass(String deputyname);
-       boolean existDeputy(String classname);
-       ERRNUM createDeputy(String deputyname, String classname, int attributeNum);
-       ERRNUM createDeputyRule(String deputyname,String classname,String rule);
-       ERRNUM createVirtualAttri(String classname, String classattri, String deputyattri, DATATYPE type, String rule);
-       ERRNUM createRealAttri(String attribute, DATATYPE type);
        
    #### insert value
    
    ![insert_value.pnh](/img/insert_value.png "insert_value")
-   
-       ERRNUM insertAttri(String classname,String[] data,DATATYPE[] type);
+
 
    #### basic and cross-class query
    
@@ -86,6 +71,7 @@ Execute layer for junior year for database design experiment in whu univ 2018 au
    | name | attributeNum | attri |
    |  |  | attrName | attType |
    
+   
    | DeputyClass |
    | name | attributeNum | sourceClass | realAttri | virtualAttri | deputyRule |
    
@@ -95,8 +81,27 @@ Execute layer for junior year for database design experiment in whu univ 2018 au
    ### 4.interface provided to compiler
    Base on interface.java
    #### create class
+  
+        boolean isSourceClass(String classname);
+        boolean existClass(String classname);
+        boolean existAttri(String classname, String attribute);    
+        ERRNUM createClass(String classname, int attributenum);    
+        ERRNUM createAttri(String classname, String attribute, DATATYPE type);    
+        boolean OuputError(ERRNUM err);
+        
    #### create deputy
+      
+       boolean isDeputyClass(String deputyname);
+       boolean existDeputy(String classname);
+       ERRNUM createDeputy(String deputyname, String classname, int attributeNum);
+       ERRNUM createDeputyRule(String deputyname,String classname,String rule);
+       ERRNUM createVirtualAttri(String classname, String classattri, String deputyattri, DATATYPE type, String rule);
+       ERRNUM createRealAttri(String attribute, DATATYPE type);
+       
    #### insert value
+      
+       ERRNUM insertAttri(String classname,String[] data,DATATYPE[] type);
+       
    #### query
    
    
