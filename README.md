@@ -1,5 +1,5 @@
 # DatabaseApp_execute
-execute part for  junior year database design experiment in whu univ 2018 autumn
+Execute layer for junior year for database design experiment in whu univ 2018 autumn
 
 ##Project Aim
  ### 1.Realize six sql sentences
@@ -68,13 +68,34 @@ execute part for  junior year database design experiment in whu univ 2018 autumn
    ![query.png](/img/query_flowchart.png "query")
    
 ##Execute Layer Design
-   mainly in /interface
+   Mainly in /interface
    ### 1.type
-   based in enum.java
+   Based on enum.java
    
    | Type | Name | openness | Describe |
    | --- | --- | --- | --- |
    | *enum* | DATATYPE | `public` | the attribute type |
    | *enum* | ERRNUM | `public` |  the error type |
    | *enum* | QUERYOP | `public` | the query operand type |
+   
+   ### 2.memory
+   based on memory.json, point out the needed information from the memory layer.
+   
+   | SourceClass |
+   | name,|
+   
+   | DeputyClass |
+   | name, |
+   
+   ### 3.prototype of intermidate calucation output
+   Base on TmpClass.java
+   
+   ### 4.interface provided to compiler
+   Base on interface.java
+   #### create class
+   #### create deputy
+   #### insert value
+   #### query
+   
+   
    

@@ -1,0 +1,33 @@
+{
+  "SourceClass": {
+    "name": "string",
+    "attributeNum": "int",
+    "attri": {
+      "attName": "string",
+      "attType": "DATATYPE"
+    }
+  },
+  "DeputyClass":{
+    "name": "string",
+    "attributeNum": "int",
+    "sourceClass" : "string",
+    "realAttri": {
+      "isVirtual" : "boolean",
+      "attName": "string",
+      "attType": "DATATYPE"
+    },
+    "virtualAttri":{
+      "isVirtual": "boolean",
+      "attName": "string",
+      "attType": "DATATYPE",
+      "source":{
+        "class": "string",
+        "attri": "string"
+      },
+      "switching": "string"
+    },
+    "deputyRule":{
+      "rule" : "string"
+    }
+  }
+}
