@@ -81,16 +81,16 @@ Execute layer for junior year for database design experiment in whu univ 2018 au
        * isVirtual
        * attName
        * attType
-    * virtualAttri 
-      * isVirtual
-      * attName
-      * attType
-      * source
-        * class
-        * attri
-      * switching
-    * deputyRule 
-      * rule
+     * virtualAttri 
+       * isVirtual
+       * attName
+       * attType
+       * source
+         * class
+         * attri
+       * switching
+     * deputyRule 
+       * rule
       
    ### 3.prototype of intermidate calucation output
    Base on TmpClass.java
