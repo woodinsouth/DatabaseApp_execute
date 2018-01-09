@@ -66,14 +66,32 @@ Execute layer for junior year for database design experiment in whu univ 2018 au
    ### 2.memory
    based on memory.json, point out the needed information from the memory layer.
    
-   | SourceClass                              |
-   | -----------------------------------------|
-   | name | attributeNum |    attri           |
-   |      |              | attrName | attType |
-   
-   
-   | DeputyClass |
-   | name | attributeNum | sourceClass | realAttri | virtualAttri | deputyRule |
+   * SourceClass
+    * name
+    * attributeNum
+    * attri
+     * attrName
+     * attType
+     
+   * DeputyClass 
+    * name
+    * attributeNum
+    * sourceClass
+    * realAttri 
+     * isVirtual
+     * attName
+     * attType
+    * virtualAttri 
+     * isVirtual
+     * attName
+     * attType
+     * source
+      * class
+      * attri
+     * switching
+    * deputyRule 
+     * rule
+    
    
    ### 3.prototype of intermidate calucation output
    Base on TmpClass.java
